@@ -47,6 +47,7 @@ def verify_password(username, password):
 # Importar modelos y servicios
 from app.models.facultad import Facultad
 from app.services import FacultadService
+from app.resources.ficha_alumno_resource import ficha_bp
 
 # Crear blueprint para facultades
 facultad_bp = Blueprint('facultad', __name__, url_prefix='/api/facultades')
@@ -110,8 +111,10 @@ def test_connection():
         "user": auth.current_user().username
     })
 
+
 # Registrar blueprints
 app.register_blueprint(facultad_bp)
+app.register_blueprint(ficha_bp)
 
 # Crear base de datos si no existe
 with app.app_context():
