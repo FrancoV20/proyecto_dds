@@ -1,3 +1,4 @@
+````plaintext
 # Proyecto DDS
 
 Este proyecto es una aplicación para la gestión académica, desarrollada en Python. Incluye modelos, repositorios, servicios y pruebas automatizadas.
@@ -22,7 +23,7 @@ Este proyecto es una aplicación para la gestión académica, desarrollada en Py
    ```
    O usa Docker:
    ```
-  cd servidor_docker
+   cd servidor_docker
    docker-compose up
    ```
 
@@ -50,3 +51,4 @@ Este proyecto es de uso académico.
 - Claude Sonnet 3.5
 - GPT-5 mini
 - GPT-4.1
+````

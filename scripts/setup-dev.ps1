@@ -1,5 +1,5 @@
 param(
-    [string]$RequirementsPath = "servidor-docker/requirements.txt",
+    [string]$RequirementsPath = "servidor_docker/requirements.txt",
     [string]$VenvPath = ".venv"
 )
 
